@@ -10,32 +10,32 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		3725AC095B974026965D128B /* .DS_Store in Resources */ = {isa = PBXBuildFile; fileRef = 14F8BC3931EA475CA1861AEC /* .DS_Store */; };
+		2B5D0CF267734D49A4EC0348 /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F901CB7BF374A248AA2D492 /* noop-file.swift */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		40B0F6668C01E4C26EBAD7C4 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 5E66BD4F8E841E7CB34F446A /* PrivacyInfo.xcprivacy */; };
-		66C9E6EEFE9645FE8319477B /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE95F3780D2C449CB436CD75 /* noop-file.swift */; };
-		82F60CC62FE04B3188819277 /* schedule.riv in Resources */ = {isa = PBXBuildFile; fileRef = A1C78BA327F84A5CA7420C4C /* schedule.riv */; };
+		5B30DB3AA5B97B4843367373 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 8174392A6A1514EDB37E8849 /* PrivacyInfo.xcprivacy */; };
 		96905EF65AED1B983A6B3ABC /* libPods-schedulecrashissue.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-schedulecrashissue.a */; };
+		9A52934B854042EC92699C3B /* schedule.riv in Resources */ = {isa = PBXBuildFile; fileRef = 963CB5151FDA4D6CA83D4754 /* schedule.riv */; };
+		AD7CCB6A3939411090F7E4D9 /* .DS_Store in Resources */ = {isa = PBXBuildFile; fileRef = 7D98D7ED1C7B4D459B8C5B45 /* .DS_Store */; };
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0CC86DF95EB64DA0A50B6E76 /* schedulecrashissue-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "schedulecrashissue-Bridging-Header.h"; path = "schedulecrashissue/schedulecrashissue-Bridging-Header.h"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* schedulecrashissue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = schedulecrashissue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = schedulecrashissue/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = schedulecrashissue/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = schedulecrashissue/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = schedulecrashissue/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = schedulecrashissue/main.m; sourceTree = "<group>"; };
-		14F8BC3931EA475CA1861AEC /* .DS_Store */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = .DS_Store; path = "/Users/trungnguyen/Projects/livenation/schedule-crash-issue/ios/Assets/.DS_Store"; sourceTree = "<group>"; };
+		2244A18AE66E4E8C9FB1129F /* schedulecrashissue-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "schedulecrashissue-Bridging-Header.h"; path = "schedulecrashissue/schedulecrashissue-Bridging-Header.h"; sourceTree = "<group>"; };
+		3F901CB7BF374A248AA2D492 /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "schedulecrashissue/noop-file.swift"; sourceTree = "<group>"; };
 		58EEBF8E8E6FB1BC6CAF49B5 /* libPods-schedulecrashissue.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-schedulecrashissue.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E66BD4F8E841E7CB34F446A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = schedulecrashissue/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		6C2E3173556A471DD304B334 /* Pods-schedulecrashissue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-schedulecrashissue.debug.xcconfig"; path = "Target Support Files/Pods-schedulecrashissue/Pods-schedulecrashissue.debug.xcconfig"; sourceTree = "<group>"; };
 		7A4D352CD337FB3A3BF06240 /* Pods-schedulecrashissue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-schedulecrashissue.release.xcconfig"; path = "Target Support Files/Pods-schedulecrashissue/Pods-schedulecrashissue.release.xcconfig"; sourceTree = "<group>"; };
-		A1C78BA327F84A5CA7420C4C /* schedule.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = schedule.riv; path = "/Users/trungnguyen/Projects/livenation/schedule-crash-issue/ios/Assets/schedule.riv"; sourceTree = "<group>"; };
+		7D98D7ED1C7B4D459B8C5B45 /* .DS_Store */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = .DS_Store; path = "/Users/trungnguyen/Projects/livenation/schedule-crash-issue/ios/Assets/.DS_Store"; sourceTree = "<group>"; };
+		8174392A6A1514EDB37E8849 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = schedulecrashissue/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		963CB5151FDA4D6CA83D4754 /* schedule.riv */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = schedule.riv; path = "/Users/trungnguyen/Projects/livenation/schedule-crash-issue/ios/Assets/schedule.riv"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = schedulecrashissue/SplashScreen.storyboard; sourceTree = "<group>"; };
-		AE95F3780D2C449CB436CD75 /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "schedulecrashissue/noop-file.swift"; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-schedulecrashissue/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
@@ -63,9 +63,9 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				AE95F3780D2C449CB436CD75 /* noop-file.swift */,
-				0CC86DF95EB64DA0A50B6E76 /* schedulecrashissue-Bridging-Header.h */,
-				5E66BD4F8E841E7CB34F446A /* PrivacyInfo.xcprivacy */,
+				3F901CB7BF374A248AA2D492 /* noop-file.swift */,
+				2244A18AE66E4E8C9FB1129F /* schedulecrashissue-Bridging-Header.h */,
+				8174392A6A1514EDB37E8849 /* PrivacyInfo.xcprivacy */,
 			);
 			name = schedulecrashissue;
 			sourceTree = "<group>";
@@ -95,8 +95,8 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				D65327D7A22EEC0BE12398D9 /* Pods */,
 				D7E4C46ADA2E9064B798F356 /* ExpoModulesProviders */,
-				14F8BC3931EA475CA1861AEC /* .DS_Store */,
-				A1C78BA327F84A5CA7420C4C /* schedule.riv */,
+				7D98D7ED1C7B4D459B8C5B45 /* .DS_Store */,
+				963CB5151FDA4D6CA83D4754 /* schedule.riv */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -153,13 +153,13 @@
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "schedulecrashissue" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
-				7916954F5B0FF2B0F9BBF777 /* [Expo] Configure project */,
+				7CD11C395F06A5884933C6E3 /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				519C980F64E89C652D232407 /* [CP] Embed Pods Frameworks */,
+				EEC5513763AC43853C6A25CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -209,9 +209,9 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				3725AC095B974026965D128B /* .DS_Store in Resources */,
-				82F60CC62FE04B3188819277 /* schedule.riv in Resources */,
-				40B0F6668C01E4C26EBAD7C4 /* PrivacyInfo.xcprivacy in Resources */,
+				AD7CCB6A3939411090F7E4D9 /* .DS_Store in Resources */,
+				9A52934B854042EC92699C3B /* schedule.riv in Resources */,
+				5B30DB3AA5B97B4843367373 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,27 +255,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		519C980F64E89C652D232407 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-schedulecrashissue/Pods-schedulecrashissue-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/RiveRuntime/RiveRuntime.framework/RiveRuntime",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RiveRuntime.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-schedulecrashissue/Pods-schedulecrashissue-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7916954F5B0FF2B0F9BBF777 /* [Expo] Configure project */ = {
+		7CD11C395F06A5884933C6E3 /* [Expo] Configure project */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -330,6 +310,26 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-schedulecrashissue/Pods-schedulecrashissue-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EEC5513763AC43853C6A25CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-schedulecrashissue/Pods-schedulecrashissue-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/RiveRuntime/RiveRuntime.framework/RiveRuntime",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RiveRuntime.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-schedulecrashissue/Pods-schedulecrashissue-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -340,7 +340,7 @@
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */,
-				66C9E6EEFE9645FE8319477B /* noop-file.swift in Sources */,
+				2B5D0CF267734D49A4EC0348 /* noop-file.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

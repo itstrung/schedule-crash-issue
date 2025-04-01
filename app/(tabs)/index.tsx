@@ -1,11 +1,7 @@
-import { Image, StyleSheet, Platform, Button } from "react-native";
+import { StyleSheet, Button } from "react-native";
 
-import { HelloWave } from "@/components/HelloWave";
-import ParallaxScrollView from "@/components/ParallaxScrollView";
-import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
 import { useRouter } from "expo-router";
-import { OfflineIndicator } from "@/components/OfflineIndicator";
 
 export default function HomeScreen() {
   const router = useRouter();
@@ -17,15 +13,6 @@ export default function HomeScreen() {
           router.push("/schedule");
         }}
       />
-      <ThemedView
-        style={{
-          minHeight: 200,
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <OfflineIndicator />
-      </ThemedView>
     </ThemedView>
   );
 }

@@ -7,12 +7,10 @@ import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { StatusBar } from "expo-status-bar";
-import { Fragment, PropsWithChildren, useEffect } from "react";
+import { Fragment, useEffect } from "react";
 import "react-native-reanimated";
 
 import { useColorScheme } from "@/hooks/useColorScheme";
-import { NetworkConnectivityProvider } from "@/components/NetworkConnectivity";
-import { OfflineIndicator } from "@/components/OfflineIndicator";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -47,11 +45,9 @@ function RootLayout() {
 export default function RootLayoutProviders() {
   const colorScheme = useColorScheme();
   return (
-    <NetworkConnectivityProvider>
-      <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
-        <RootLayout />
-        <StatusBar style="auto" />
-      </ThemeProvider>
-    </NetworkConnectivityProvider>
+    <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
+      <RootLayout />
+      <StatusBar style="auto" />
+    </ThemeProvider>
   );
 }
