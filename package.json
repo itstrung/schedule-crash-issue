@@ -7,6 +7,7 @@
     "reset-project": "node ./scripts/reset-project.js",
     "android": "expo run:android",
     "ios": "expo run:ios",
+    "ios:device": "npx expo run:ios --device",
     "web": "expo start --web",
     "test": "jest --watchAll",
     "lint": "expo lint",
@@ -17,6 +18,8 @@
   },
   "dependencies": {
     "@expo/vector-icons": "^14.0.2",
+    "@faker-js/faker": "^9.6.0",
+    "@react-native-community/netinfo": "^11.4.1",
     "@react-navigation/bottom-tabs": "^7.2.0",
     "@react-navigation/native": "^7.0.14",
     "expo": "52.0.37",

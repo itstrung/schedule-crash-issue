@@ -2,7 +2,8 @@ import { useWindowDimensions } from "react-native";
 
 import { ThemedView } from "@/components/ThemedView";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
+import { faker } from "@faker-js/faker";
 
 import {
   convert24HTo12H,
@@ -545,15 +546,57 @@ const initRive = (riveAnimation: RiveRef) => {
   console.log("Rive animation loaded");
   updateTotalNumberOfHoursDisplayed({
     riveAnimation,
-    numHoursDisplayed: DEFAULT_MAX_HOUR_TO_DISPLAY,
+    numHoursDisplayed: 12,
+  });
+  updateHoursName(riveAnimation, {
+    minHour: 1,
   });
 
   updateDaysDisplayed(riveAnimation, {
-    days: [
-      { displayDate: "2023-10-01", name: "Day 1" },
+    days: MOCK_DAYS,
+  });
 
-      { displayDate: "2023-10-02", name: "Day 2" },
-    ],
+  // render the number of stages in each day
+  MOCK_DAYS.forEach((day, index) => {
+    const dayNumber = index + 1;
+
+    updateNumberOfStagesDisplayedInDay(riveAnimation, {
+      dayNumber,
+      numOfStages: 3,
+    });
+  });
+
+  updateSelectedDay(riveAnimation, {
+    selectedDayNumber: 1,
+  });
+};
+
+const renderStagesInDay = (riveAnimation: RiveRef, stateName: string) => {
+  if (!stateName.trim().includes("DAY")) {
+    return;
+  }
+
+  const dayNumber = Number(stateName.trim().replace("DAY", ""));
+
+  const stages = MOCK_STAGES[dayNumber];
+  if (!stages) {
+    return;
+  }
+
+  updateStagesDisplayed(riveAnimation, {
+    stages,
+  });
+
+  stages.forEach((stages, idx) => {
+    const stageNumber = idx + 1;
+
+    const key = `${stages.displayDate}_${stageNumber}`;
+    const sets = MOCK_SETS[key];
+
+    updateSetsDisplayedInStage(riveAnimation, {
+      stageNumber,
+      sets: sets,
+    });
   });
 };
 
@@ -562,6 +605,12 @@ export default function ScheduleScreen() {
   const { bottom, top } = useSafeAreaInsets();
   const hasInit = useRef(false);
   const riveRef = useRef<RiveRef>(null);
+
+  useEffect(() => {
+    return () => {
+      riveRef.current?.stop();
+    };
+  });
   return (
     <ThemedView style={{ flex: 1 }}>
       <Rive
@@ -577,6 +626,16 @@ export default function ScheduleScreen() {
           width,
           height,
         }}
+        onStateChanged={(stateMachineName, stateName) => {
+          if (!riveRef.current) {
+            return;
+          }
+
+          if (stateName.trim().includes("DAY")) {
+            renderStagesInDay(riveRef.current, stateName);
+            return;
+          }
+        }}
         fit={Fit.Contain}
         alignment={Alignment.Center}
         resourceName="schedule"
@@ -585,3 +644,82 @@ export default function ScheduleScreen() {
     </ThemedView>
   );
 }
+
+const MOCK_DAYS: ScheduleDay[] = [
+  { displayDate: "2023-10-01", name: "Day 1" },
+  { displayDate: "2023-10-02", name: "Day 2" },
+  { displayDate: "2023-10-03", name: "Day 3" },
+];
+
+const MOCK_STAGES: Record<number, ScheduleStage[]> = {
+  1: [
+    { displayDate: "2023-10-01", name: "Stage 1" },
+    { displayDate: "2023-10-01", name: "Stage 2" },
+    { displayDate: "2023-10-01", name: "Stage 3" },
+  ],
+  2: [
+    { displayDate: "2023-10-02", name: "Stage 4" },
+    { displayDate: "2023-10-02", name: "Stage 5" },
+    { displayDate: "2023-10-02", name: "Stage 6" },
+  ],
+  3: [
+    { displayDate: "2023-10-03", name: "Stage 7" },
+    { displayDate: "2023-10-03", name: "Stage 8" },
+    { displayDate: "2023-10-03", name: "Stage 9" },
+  ],
+};
+
+const createMockSet = (): ScheduleSet => {
+  const startMin = faker.number.int({
+    min: 0,
+    max: 720,
+  });
+
+  const endMin = faker.number.int({
+    min: startMin,
+    max: 1440,
+  });
+  const mockSet: ScheduleSet = {
+    artistHeight: endMin - startMin,
+    artistPos: faker.number.int({
+      min: 0,
+      max: 1440,
+    }),
+    displayDate: "",
+    endTime: faker.date.anytime(),
+    startTime: faker.date.anytime(),
+    eventName: faker.commerce.product(),
+    stageName: faker.commerce.product(),
+    myArtist: {
+      artistNameOnLine1: faker.commerce.product(),
+      artistNameOnLine2: faker.commerce.product(),
+      isPast: faker.datatype.boolean(),
+      isSaved: faker.datatype.boolean(),
+      time: faker.commerce.product(),
+    },
+  };
+  return mockSet;
+};
+
+const createMockSetList = (length: number): ScheduleSet[] => {
+  const sets: ScheduleSet[] = [];
+  for (let i = 0; i < length; i++) {
+    sets.push(createMockSet());
+  }
+
+  return sets;
+};
+
+const MOCK_SETS: Record<string, ScheduleSet[]> = {
+  "2023-10-01_1": createMockSetList(12),
+  "2023-10-01_2": createMockSetList(12),
+  "2023-10-01_3": createMockSetList(12),
+  // Day 2
+  "2023-10-02_1": createMockSetList(12),
+  "2023-10-02_2": createMockSetList(12),
+  "2023-10-02_3": createMockSetList(12),
+  // Day 3
+  "2023-10-03_1": createMockSetList(12),
+  "2023-10-03_2": createMockSetList(12),
+  "2023-10-03_3": createMockSetList(12),
+};
