@@ -8949,13 +8949,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rive-react-native@npm:9.1.0":
-  version: 9.1.0
-  resolution: "rive-react-native@npm:9.1.0"
+"rive-react-native@npm:^9.2.1":
+  version: 9.2.1
+  resolution: "rive-react-native@npm:9.2.1"
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 10c0/3f3b582c1fcf59055ffe1174f228f7f755395253297476fccfd28451784bd0e8754518ebf4699eea552654029f10a7b9703284421aa103cf2794f1bdba9508e2
+  checksum: 10c0/081dfbc9d4a79446192f530dad80f3fd4d435692bfc19ad97b94f529bcad6771e999901627411c44af269624652cd21d9989674cb2b5a517481a888fa3b1ce6e
   languageName: node
   linkType: hard
 
@@ -9035,7 +9035,7 @@ __metadata:
     react-native-web: "npm:~0.19.13"
     react-native-webview: "npm:13.12.5"
     react-test-renderer: "npm:18.3.1"
-    rive-react-native: "npm:9.1.0"
+    rive-react-native: "npm:^9.2.1"
     typescript: "npm:^5.3.3"
   languageName: unknown
   linkType: soft

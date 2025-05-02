@@ -614,28 +614,28 @@ export default function ScheduleScreen() {
   return (
     <ThemedView style={{ flex: 1 }}>
       <Rive
-        onPlay={() => {
-          if (!riveRef.current || hasInit.current) {
-            return;
-          }
-          initRive(riveRef.current);
-          hasInit.current = true;
-        }}
+        // onPlay={() => {
+        //   if (!riveRef.current || hasInit.current) {
+        //     return;
+        //   }
+        //   initRive(riveRef.current);
+        //   hasInit.current = true;
+        // }}
         ref={riveRef}
         style={{
           width,
           height,
         }}
-        onStateChanged={(stateMachineName, stateName) => {
-          if (!riveRef.current) {
-            return;
-          }
+        // onStateChanged={(stateMachineName, stateName) => {
+        //   if (!riveRef.current) {
+        //     return;
+        //   }
 
-          if (stateName.trim().includes("DAY")) {
-            renderStagesInDay(riveRef.current, stateName);
-            return;
-          }
-        }}
+        //   if (stateName.trim().includes("DAY")) {
+        //     renderStagesInDay(riveRef.current, stateName);
+        //     return;
+        //   }
+        // }}
         fit={Fit.Contain}
         alignment={Alignment.Center}
         resourceName="schedule"
