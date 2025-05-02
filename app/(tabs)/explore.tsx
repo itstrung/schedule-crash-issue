@@ -5,6 +5,11 @@ import { useEffect, useRef, useState } from "react";
 
 const TAB_BAR_RIVE_STATE_MACHINE_NAME = "State Machine 1";
 const TAB_BAR_RIVE_STATE_MACHINE_INPUT = "Select?";
+const ANIMATION_NAMES = [
+  "nav_icon_festival",
+  "nav_icon_festiverse",
+  "nav_icon_more",
+] as const;
 
 const RiveAnimation = ({
   isFocused,
@@ -37,12 +42,6 @@ const RiveAnimation = ({
     />
   );
 };
-
-const ANIMATION_NAMES = [
-  "nav_icon_festival",
-  "nav_icon_festiverse",
-  "nav_icon_more",
-] as const;
 
 export default function TabTwoScreen() {
   const [activeAnimation, setActiveAnimation] = useState<string>(
